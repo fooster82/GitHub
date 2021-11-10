@@ -1,4 +1,5 @@
 import React from "react";
+import './style.css';
 
 const RepoCard = ({
     repoName,
@@ -7,15 +8,13 @@ const RepoCard = ({
     openIssues,
     watchers,
     stargazers,
-    language,
   }) => {
     return (
       <div id="card">
-        <a target="_blank" href={url}>
+        <a id="repo-name" target="_blank" href={url}>
           {repoName}
         </a>
   
-        <span className="language">{language}</span>
         <div id="details">
           <p>Forks: {forks}</p>
           <p>Open Issues: {openIssues}</p>

@@ -36,7 +36,6 @@ const Form = () => {
         let forks = repo.forks;
         let openIssues = repo.open_issues;
         let watchers = repo.watchers;
-        let language = repo.language;
         let stargazers = repo.stargazers_count;
         return {
           username,
@@ -45,7 +44,6 @@ const Form = () => {
           forks,
           openIssues,
           watchers,
-          language,
           stargazers,
         };
       });

@@ -14,11 +14,9 @@ export default function Repos() {
             repoName={repo.repoName}
             url={repo.url}
             forks={repo.forks}
-            language={repo.repoLanguage}
             openIssues={repo.openIssues}
             watchers={repo.watchers}
             stargazers={repo.stargazers}
-            language={repo.language}
         />
         ))}
     </>

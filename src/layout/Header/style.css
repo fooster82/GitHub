@@ -12,7 +12,7 @@ header {
     position: relative;
 }
 
-img {
+.header-img {
     height: 5%;
     width: 5%;
 }

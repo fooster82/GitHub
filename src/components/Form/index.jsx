@@ -59,8 +59,9 @@ const Form = () => {
   return (
     <div id="search-wrapper">
       <form onSubmit={handleSubmit} aria-label="search">
-        <input
-          id="form-textbox"
+        <input 
+          id="form-textbox" 
+          className = "expand-right"
           type="text"
           aria-label="Repo"
           value={user}
@@ -68,7 +69,7 @@ const Form = () => {
           placeholder="Username..."
           onChange={updateInput}
         />
-        <input type="submit" value="Search" />
+        {/* <input id="btn" type="submit" value="Search" /> */}
       </form>
       {repos[0] && (
         <img

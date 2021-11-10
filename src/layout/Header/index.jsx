@@ -7,7 +7,7 @@ import { Form } from '../../components';
 export function Header() {
     return (
         <header>
-            <img src={logo} alt="GitHub logo" />
+            <img className="header-img" src={logo} alt="GitHub logo" />
                 <Form />
         </header>
     )

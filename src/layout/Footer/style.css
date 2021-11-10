@@ -1,0 +1,25 @@
+body {
+    background-color: #22272e;
+}
+
+footer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #2d333b;
+    margin: 0 40px 0 40px;
+}
+
+.footer-img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+}

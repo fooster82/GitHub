@@ -76,7 +76,7 @@ const Form = () => {
           id="stats-img"
         />
       )}
-      <p>{error}</p>
+      <p id="error">{error}</p>
     </>
   );
 };

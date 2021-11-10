@@ -44,3 +44,10 @@
     top: 250%;
     left: 40%;
 }
+
+#error {
+    position: absolute;
+    left: 42.5vw;  
+    top: 14vh;
+    margin: 0;
+}

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import axios from "axios";
 import { RepoContext } from "../../context/RepoContext";
 import './style.css';
@@ -53,6 +53,10 @@ const Form = () => {
       setError("That's not a valid Username");
     }
   };
+
+useEffect(() => {
+  fetchRepos('fooster82')
+}, [])
 
   return (
     <>

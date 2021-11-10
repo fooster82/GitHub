@@ -1,0 +1,51 @@
+#search-wrapper {
+    margin-left: 100px;
+    position: absolute;
+    top: 55%;
+    transform: translate(-50%, -50%);    
+}
+
+#form-textbox {
+    background-color: #0E1117;
+    color: white;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+    border-color: grey;
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    z-index: 10;
+    transition-duration: 0.4s;
+}
+
+#form-textbox:focus {
+    width: 500px;
+    padding: 0 16px 0 0;
+    
+}
+
+.expand-right {
+    right: auto;
+	left: 49px;
+}
+
+.expand-right:focus {
+    padding: 0 0 0 16px;
+}
+
+::-moz-placeholder {
+    opacity: 1;    
+}
+
+#stats-img {
+    position: absolute;
+    top: 250%;
+    left: 40%;
+}
+
+#error {
+    position: absolute;
+    left: 42.5vw;  
+    top: 14vh;
+    margin: 0;
+}

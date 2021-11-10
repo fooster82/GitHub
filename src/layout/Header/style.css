@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #2d333b;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    height: 25%;
+    width: 100%;
+    position: relative;
+}
+
+.header-img {
+    height: 5%;
+    width: 5%;
+}

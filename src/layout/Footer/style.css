@@ -1,0 +1,29 @@
+body {
+    background-color: #22272e;
+    color: #adbac7;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+footer {
+    position: relative;
+    height: 15vh;
+    width: 100vw;
+    bottom: 0;
+}
+
+#footer-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #2d333b;
+    margin: 0 40px 0 40px;
+    margin-top: 50px;
+    
+}
+
+.footer-img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 25px;
+}

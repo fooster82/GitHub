@@ -1,0 +1,22 @@
+#card {
+    padding-left: 50px;
+    padding-top: 30px;
+    border-bottom: 1px solid #2d333b;
+}
+
+#repo-name {
+    text-decoration: none ;
+    font-weight: 600;
+}
+
+#repo-name:visited {
+    color: #1565C0;
+}
+
+#repo-name:hover {
+    text-decoration: underline;
+}
+
+#repo-name:focus {
+    color: white;
+}

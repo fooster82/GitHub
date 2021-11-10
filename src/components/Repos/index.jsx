@@ -1,28 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { API_URL } from '../../constants';
+import React, { useContext } from "react";
+import { RepoCard } from "..";
+import { RepoContext } from "../../context/RepoContext";
 
+export default function Repos() {
 
-export function Repos() {
-    const [ repos, setRepos ] = useState({ name: "", html_url: "" });
-
-    const num = 3;
-    useEffect(() => {
-        const getRepos = async () => {
-            try {
-               const { data } = await axios.get(`${API_URL}`); 
-               setRepos([ data[0].name, data[0].html_url ]);               
-            } catch (err) {
-                console.log(err);
-            }
-        }
-        getRepos()
-    }, [num])
-
-    console.log(repos)
+    const [repos, setRepos] = useContext(RepoContext);
     return (
-        <div>
-            data.name and data.html_url
-        </div>
-    )
-}
+    <>
+        {repos.map((repo) => (
+        <RepoCard
+            key={repo.repoName}
+            username={repo.username}
+            repoName={repo.repoName}
+            url={repo.url}
+            forks={repo.forks}
+            language={repo.repoLanguage}
+            openIssues={repo.openIssues}
+            watchers={repo.watchers}
+            stargazers={repo.stargazers}
+            language={repo.language}
+        />
+        ))}
+    </>
+    );
+};
+
+
+
+
+

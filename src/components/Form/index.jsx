@@ -57,29 +57,29 @@ const Form = () => {
   };
 
   return (
-    <div id="search-wrapper">
-      <form onSubmit={handleSubmit} aria-label="search">
-        <input 
-          id="form-textbox" 
-          className = "expand-right"
-          type="text"
-          aria-label="Repo"
-          value={user}
-          name="user"
-          placeholder="Username..."
-          onChange={updateInput}
-        />
-        {/* <input id="btn" type="submit" value="Search" /> */}
-      </form>
+    <>
+      <div id="search-wrapper">
+        <form onSubmit={handleSubmit} aria-label="search">
+          <input 
+            id="form-textbox" 
+            className = "expand-right"
+            type="text"
+            aria-label="Repo"
+            value={user}
+            name="user"
+            placeholder="Username..."
+            onChange={updateInput}
+          />
+        </form>      
+      </div>
       {repos[0] && (
-        <img
-          src={
-              `https://github-readme-stats.vercel.app/api?username=${repos[0].username}`
-            }
+        <img 
+          src={`https://github-readme-stats.vercel.app/api?username=${repos[0].username}`}
+          id="stats-img"
         />
       )}
       <p>{error}</p>
-    </div>
+    </>
   );
 };
 

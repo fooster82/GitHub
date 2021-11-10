@@ -3,8 +3,7 @@
     position: absolute;
     top: 55%;
     left: 10%;
-    transform: translate(-50%, -50%);  
-   
+    transform: translate(-50%, -50%);    
 }
 
 #form-textbox {
@@ -39,10 +38,10 @@
 ::-moz-placeholder {
     opacity: 1;    
 }
-/* 
-#btn {
-    background-color: #0E1117;
-    color: white;
-    border-color: #0E1117;
-    border-radius: 2px;    
-} */
+
+#stats-img {
+    position: absolute;
+    top: 250%;
+    left: 40%;
+    /* transform: translate(0, 0) */
+}

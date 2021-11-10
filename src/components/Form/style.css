@@ -1,0 +1,19 @@
+#search-wrapper {
+    margin-left: 100px;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);  
+}
+
+#form-textbox {
+    background-color: #0E1117;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 8px;
+}
+
+::-moz-placeholder {
+    /* color: white !important; */
+    /* text-decoration: none !important; */
+}

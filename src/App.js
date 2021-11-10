@@ -1,13 +1,13 @@
 import React from "react";
-import { Form } from "../src/components";
 import { Repos } from "./components";
 import { RepoContextProvider } from "./context/RepoContext";
+import { Header } from './layout/Header'; 
 
 function App() {
   return (
     <RepoContextProvider>
       <div id="app">
-        <Form />
+        <Header />
         
         <Repos />
       </div>

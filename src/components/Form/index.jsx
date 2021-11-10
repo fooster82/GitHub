@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import { RepoContext } from "../../context/RepoContext";
+import './style.css';
 
 const Form = () => {
   const [user, setUser] = useState("");
@@ -59,11 +60,12 @@ const Form = () => {
     <div id="search-wrapper">
       <form onSubmit={handleSubmit} aria-label="search">
         <input
+          id="form-textbox"
           type="text"
           aria-label="Repo"
           value={user}
           name="user"
-          placeholder="Username"
+          placeholder="Username..."
           onChange={updateInput}
         />
         <input type="submit" value="Search" />

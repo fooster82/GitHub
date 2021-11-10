@@ -50,7 +50,7 @@ const Form = () => {
       setRepos(array);
       console.log(array);
     } catch (err) {
-      setError("That's not a valid Username");
+      setError("That's not a valid Username, please enter a differnt one");
     }
   };
 

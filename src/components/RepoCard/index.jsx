@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const RepoCard = ({
     repoName,
     url,
@@ -12,7 +11,7 @@ const RepoCard = ({
   }) => {
     return (
       <div id="card">
-        <a className="repo-url" target="_blank" href={url}>
+        <a target="_blank" href={url}>
           {repoName}
         </a>
   
@@ -22,11 +21,7 @@ const RepoCard = ({
           <p>Open Issues: {openIssues}</p>
           <p>Watchers: {watchers}</p>
           <p>
-            Stars:{" "}
-            <span>
-              <i className="ri-star-fill"></i>
-            </span>
-            {stargazers}
+            Stars: {stargazers}
           </p>
         </div>
       </div>

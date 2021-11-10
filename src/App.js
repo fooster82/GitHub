@@ -7,11 +7,9 @@ function App() {
   return (
     <RepoContextProvider>
       <div id="app">
-        {/* <Header /> */}
         <Form />
         
         <Repos />
-        {/* <Footer /> */}
       </div>
     </RepoContextProvider>
   );

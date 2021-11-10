@@ -7,6 +7,7 @@ const Form = () => {
   const [error, setError] = useState(null);
   const [repos, setRepos] = useContext(RepoContext);
   const [data, setData] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchRepos(user);
@@ -22,12 +23,12 @@ const Form = () => {
     try {
       setError(null);
       const { data } = await axios.get(
-        `https://api.github.com/users/${user}/repos`
+        `https://api.github.com/users/${user}/repos`        
       );
       if (!data.length) {
         setError("Sorry, this user has no public repos");
       }
-      const array = data.reverse().map((repo) => {
+      const array = data.map((repo) => {
         let username = repo.owner.login;
         let repoName = repo.name;
         let url = repo.html_url;
@@ -58,22 +59,20 @@ const Form = () => {
     <div id="search-wrapper">
       <form onSubmit={handleSubmit} aria-label="search">
         <input
-          className="search-input"
           type="text"
           aria-label="Repo"
           value={user}
           name="user"
-          placeholder="Get Spying!"
+          placeholder="Username"
           onChange={updateInput}
         />
-        <input className="search-btn" type="submit" value="Search" />
+        <input type="submit" value="Search" />
       </form>
-      {repos && repos[0] && (
+      {repos[0] && (
         <img
-          src={`https://github-readme-stats.vercel.app/api?username=${
-            repos[0] && repos[0].username
-          }
-        `}
+          src={
+              `https://github-readme-stats.vercel.app/api?username=${repos[0].username}`
+            }
         />
       )}
       <p>{error}</p>

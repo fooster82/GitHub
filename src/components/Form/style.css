@@ -2,14 +2,12 @@
     margin-left: 100px;
     position: absolute;
     top: 55%;
-    /* left: 10%; */
     transform: translate(-50%, -50%);    
 }
 
 #form-textbox {
     background-color: #0E1117;
     color: white;
-    /* margin-left: 10px; */
     border-radius: 5px;
     padding: 0 0 0 5px;
     border-color: grey;
